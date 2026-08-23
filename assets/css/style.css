@@ -5929,10 +5929,20 @@ body.mfp-zoom-out-cur {
     }
     .founder-bg {
         position: relative !important;
-        height: 280px !important;
+        height: 280px !important; /* Slightly taller for a nice hero shot */
         inset: auto !important;
         width: 100%;
         margin-bottom: 30px;
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    .founder-bg[data-overlay-dark]:before {
+        display: none !important;
+    }
+    .pb-0-mobile {
+        padding-bottom: 0 !important;
     }
 }
 @media screen and (min-width: 768px) {
